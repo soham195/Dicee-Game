@@ -13,14 +13,14 @@ function winner() {
   let selecth1 = document.querySelector("h1")
 
   if (randomNumber1 > randomNumber2) {
-    let textChange = selecth1.innerHTML = "Player One Wins!"
+    let textChange = selecth1.innerHTML = "Player One Wins! Reload to Play again!"
     textChange.style.whiteSpace = "nowrap"
   }
   else if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player Two Wins!";
+    document.querySelector("h1").innerHTML = "Player Two Wins! Reload to Play again!";
   }
   else {
-    document.querySelector("h1").innerHTML = "Draw, Roll again!";
+    document.querySelector("h1").innerHTML = "Draw, Roll again! Reload to Play again!";
   }
 }
 winner()
